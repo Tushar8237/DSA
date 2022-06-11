@@ -66,3 +66,28 @@
 // const result = countUniqueNumber([1, 1, 2, 2, 3, 4, 4, 5, 6, 7, 8, 8, 9, 9]);
 
 // console.log(result);
+
+// find largest number of array
+// [1,2,3,4,5,6,7,8,]
+
+// function findLargest(array, num) {
+//   if (num > array) {
+//     throw new Error("num is not greater then arrray");
+//   } else {
+//     let max = 0;
+//     for (let i = 0; i < array.lenght - num + 1; i++) {
+//       let tmp = 0;
+//       for (let j = 0; j < num; j++) {
+//         tmp += array[i + j];
+//       }
+//       if (tmp > max) {
+//         max = tmp;
+//       }
+//     }
+//     return max;
+//   }
+// }
+
+// const result = findLargest([1, 2, 3, 4, 5, 6, 7, 8], 4);
+
+// console.log(result);
