@@ -91,3 +91,30 @@
 // const result = findLargest([1, 2, 3, 4, 5, 6, 7, 8], 4);
 
 // console.log(result);
+
+//  Divide & Conquerer Technique
+//  Find the index of given no in a arry 7
+//  [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] ==> index 6 ->output
+
+function searchAlog(array, number) {
+  let min = 0;
+  let max = array.lenght - 1;
+  while (min <= max) {
+    let midIndex = Math.floor((min + max) / 2);
+    if (array[midIndex] < number) {
+      min = midIndex + 1;
+    } else if (array[midIndex] > number) {
+      max = midIndex - 1;
+    } else {
+      return midIndex;
+    }
+  }
+  return -1;
+}
+
+const result = searchAlog(
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+  7
+);
+
+console.log(result);
