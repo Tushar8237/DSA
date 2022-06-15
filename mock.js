@@ -18,3 +18,14 @@
 // let reverse = array.reverse();
 
 // console.log(reverse);
+
+// get value of input
+
+// function getValue() {
+//   var string = document.getElementById("searchText").value;
+//   console.log(string);
+// }
+
+fetch("https://jsonplaceholder.typicode.com/albums")
+  .then((response) => response.text())
+  .then((data) => console.log(data));
