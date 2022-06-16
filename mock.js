@@ -26,6 +26,41 @@
 //   console.log(string);
 // }
 
-fetch("https://jsonplaceholder.typicode.com/albums")
-  .then((response) => response.text())
-  .then((data) => console.log(data));
+// fatch api in react js
+
+// import { useEffect, useState } from "react";
+// import "./styles.css";
+
+// export default function App() {
+//   const [data, setData] = useState([]);
+
+//   useEffect(() => {
+//     fetch("https://jsonplaceholder.typicode.com/albums%22).then((result) => {
+//       result.json().then((resp) => {
+//         // console.warn("result", resp);
+//         setData(resp);
+//       });
+//     });
+//   }, []);
+//   console.warn(data);
+
+//   return (
+//     <div className="App">
+//       <h1>Hello CodeSandbox</h1>
+//       <table border="1">
+//         <tr>
+//           <td>userId</td>
+//           <td>id</td>
+//           <td>title</td>
+//         </tr>
+//         {data.map((item) => (
+//           <tr>
+//             <td>{item.userId}</td>
+//             <td>{item.id}</td>
+//             <td>{item.title}</td>
+//           </tr>
+//         ))}
+//       </table>
+//     </div>
+//   );
+// }
