@@ -64,3 +64,13 @@
 //     </div>
 //   );
 // }
+
+let array = [1, 2, 2, 3, 4, 4, 5, 6, 7, 8, 8];
+
+function removeDuplicate() {
+  return array.filter((item, index) => array.indexOf(item) === index);
+}
+
+const result = removeDuplicate(array);
+
+console.log("result", result);
