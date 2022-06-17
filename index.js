@@ -142,3 +142,6 @@
 // const result = isSquareCheck([1, 2, 3, 4], [1, 9, 4, 16]);
 
 // console.log(result);
+
+//  checking square of another array
+// array1 = [1,2,3,4], array2=[1,9,4,16]
