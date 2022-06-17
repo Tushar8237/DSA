@@ -145,3 +145,22 @@
 
 //  checking square of another array
 // array1 = [1,2,3,4], array2=[1,9,4,16]
+
+// Calculate the number of days between two dates in Javascript required to use date object
+
+var date1 = new Date("06/30/2019");
+
+var date2 = new Date("07/30/2022");
+
+var DifferenceInTime = date2.getTime() - date1.getTime();
+
+var DifferenceInDays = DifferenceInTime / (1000 * 3600 * 24);
+
+document.write(
+  "Total number of days between dates <br>" +
+    date1 +
+    "<br> and <br>" +
+    date2 +
+    " is: <br>" +
+    DifferenceInDays
+);
