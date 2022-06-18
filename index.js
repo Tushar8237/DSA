@@ -171,21 +171,40 @@
 //  example 1
 // This example illustrates the comparison of the dates using the getTime() function.
 
-var g1 = new Date();
-var g2 = new Date();
+// var g1 = new Date();
+// var g2 = new Date();
 
-if (g1.getTime() === g2.getTime()) document.write("Both are equal ");
-else document.write("Not equal");
+// if (g1.getTime() === g2.getTime()) document.write("Both are equal ");
+// else document.write("Not equal");
 
 // example 2
 // This example illustrates the comparison of the current date with assigned date using the getTime() function.
-var date1 = new Date();
+// var date1 = new Date();
 
 // (yyyy-mm-dd)
 
-var date2 = new Date(2019 - 08 - 03);
-if (date1.getTime() < date2.getTime())
-  document.write("Date 1 is lesser than date 2");
-else if (date1.getTime() > date2.getTime())
-  document.write("Date 1 is greater than date 2");
-else document.write("Both are equal");
+// var date2 = new Date(2019 - 08 - 03);
+// if (date1.getTime() < date2.getTime())
+//   document.write("Date 1 is lesser than date 2");
+// else if (date1.getTime() > date2.getTime())
+//   document.write("Date 1 is greater than date 2");
+// else document.write("Both are equal");
+
+//  Generate Random Whole Numbers
+
+// let randomNumber0and9 = Math.floor(Math.random() * 20);
+// function randomWholeNum() {
+//   return Math.floor(Math.random() * 5);
+// }
+
+// const result = randomWholeNum();
+
+// console.log(result);
+
+// function rangeOfNumbers(startNum, endNum) {
+//   return startNum === endNum
+//     ? [startNum]
+//     : rangeOfNumbers(startNum, endNum - 1).concat(endNum);
+// }
+
+// console.log(rangeOfNumbers(1, 5));
