@@ -148,19 +148,44 @@
 
 // Calculate the number of days between two dates in Javascript required to use date object
 
-var date1 = new Date("06/30/2019");
+// var date1 = new Date("06/30/2019");
 
-var date2 = new Date("07/30/2022");
+// var date2 = new Date("07/30/2022");
 
-var DifferenceInTime = date2.getTime() - date1.getTime();
+// var DifferenceInTime = date2.getTime() - date1.getTime();
 
-var DifferenceInDays = DifferenceInTime / (1000 * 3600 * 24);
+// var DifferenceInDays = DifferenceInTime / (1000 * 3600 * 24);
 
-document.write(
-  "Total number of days between dates <br>" +
-    date1 +
-    "<br> and <br>" +
-    date2 +
-    " is: <br>" +
-    DifferenceInDays
-);
+// document.write(
+//   "Total number of days between dates <br>" +
+//     date1 +
+//     "<br> and <br>" +
+//     date2 +
+//     " is: <br>" +
+//     DifferenceInDays
+// );
+
+//  Compare two dates using javascript
+
+// current date
+//  example 1
+// This example illustrates the comparison of the dates using the getTime() function.
+
+var g1 = new Date();
+var g2 = new Date();
+
+if (g1.getTime() === g2.getTime()) document.write("Both are equal ");
+else document.write("Not equal");
+
+// example 2
+// This example illustrates the comparison of the current date with assigned date using the getTime() function.
+var date1 = new Date();
+
+// (yyyy-mm-dd)
+
+var date2 = new Date(2019 - 08 - 03);
+if (date1.getTime() < date2.getTime())
+  document.write("Date 1 is lesser than date 2");
+else if (date1.getTime() > date2.getTime())
+  document.write("Date 1 is greater than date 2");
+else document.write("Both are equal");
