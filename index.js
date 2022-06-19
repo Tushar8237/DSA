@@ -208,3 +208,54 @@
 // }
 
 // console.log(rangeOfNumbers(1, 5));
+
+//  count consecutive characters
+
+// const maxNumber = (str) => {
+//   let max = 0;
+//   let currentMax = 1;
+//   for (let i = 0; i < str.lenght; i++) {
+//     const current = str[i];
+//     const next = str[i + 1];
+//     if (current === next) {
+//       currentMax++;
+//     } else {
+//       max = Math.max(max, currentMax);
+//       currentMax = 1;
+//     }
+//   }
+//   return max;
+// };
+// const str = "aabbcccddee";
+
+// console.log(maxNumber(str));
+
+//  Javascript program to find the maximum consecutive repeating character in given string
+
+let str = "aaaabbbbbbbbbbbbbbbbbbaaccdeeeeeeeeeee";
+
+// function to find out the maximum repeating character in given string
+const maxRepeating = (str) => {
+  let len = str.length;
+  let count = 0;
+
+  // Find the maximum repeating character starting from str [i]
+
+  let res = str[0];
+  for (let i = 0; i < len; i++) {
+    let currentCount = 1;
+    for (let j = i + 1; j < len; j++) {
+      if (str[i] != str[j]) break;
+      currentCount++;
+    }
+    // Update result if required
+
+    if (currentCount > count) {
+      count = currentCount;
+      res = str[i];
+    }
+  }
+  return res;
+};
+
+console.log(maxRepeating(str));
