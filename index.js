@@ -232,30 +232,30 @@
 
 //  Javascript program to find the maximum consecutive repeating character in given string
 
-let str = "aaaabbbbbbbbbbbbbbbbbbaaccdeeeeeeeeeee";
+// let str = "aaaabbbbbbbbbbbbbbbbbbaaccdeeeeeeeeeee";
 
 // function to find out the maximum repeating character in given string
-const maxRepeating = (str) => {
-  let len = str.length;
-  let count = 0;
+// const maxRepeating = (str) => {
+//   let len = str.length;
+//   let count = 0;
 
-  // Find the maximum repeating character starting from str [i]
+// Find the maximum repeating character starting from str [i]
 
-  let res = str[0];
-  for (let i = 0; i < len; i++) {
-    let currentCount = 1;
-    for (let j = i + 1; j < len; j++) {
-      if (str[i] != str[j]) break;
-      currentCount++;
-    }
-    // Update result if required
+// let res = str[0];
+// for (let i = 0; i < len; i++) {
+//   let currentCount = 1;
+//   for (let j = i + 1; j < len; j++) {
+//     if (str[i] != str[j]) break;
+//     currentCount++;
+//   }
+//   // Update result if required
 
-    if (currentCount > count) {
-      count = currentCount;
-      res = str[i];
-    }
-  }
-  return res;
-};
+//     if (currentCount > count) {
+//       count = currentCount;
+//       res = str[i];
+//     }
+//   }
+//   return res;
+// };
 
-console.log(maxRepeating(str));
+// console.log(maxRepeating(str));
