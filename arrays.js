@@ -93,32 +93,54 @@
 
 //  Create an 2D array
 
-var arr = new Array(2);
+// var arr = new Array(2);
 
-console.log("Creating 2D arraty <br>");
+// console.log("Creating 2D arraty <br>");
 
 // loop to create 2D array using 1D array
 
-for (var i = 0; i < arr.length; i++) {
-  arr[i] = new Array(2);
-}
+// for (var i = 0; i < arr.length; i++) {
+//   arr[i] = new Array(2);
+// }
 
-var h = 0;
+// var h = 0;
 
 // loop to initialize 2D array elements.
 
-for (var i = 0; i < 2; i++) {
-  for (var j = 0; j < 2; j++) {
-    arr[i][j] = h++;
-  }
-}
+// for (var i = 0; i < 2; i++) {
+//   for (var j = 0; j < 2; j++) {
+//     arr[i][j] = h++;
+//   }
+// }
 
 //  loop to display the elements of 2D array.
 
-for (var i = 0; i < 2; i++) {
-  for (var j = 0; j < 2; j++) {
-    console.log(arr[i][j] + " ");
-  }
+// for (var i = 0; i < 2; i++) {
+//   for (var j = 0; j < 2; j++) {
+//     console.log(arr[i][j] + " ");
+//   }
 
-  console.log("<br>");
-}
+//   console.log("<br>");
+// }
+
+// Find the minimum number in array
+
+// function findMinmum(array) {
+//   if (!array.length) {
+//     throw new Error("array should not be empty");
+//   } else if (array.length === 1) {
+//     return array[0];
+//   } else {
+//     let currentMin = array[0];
+//     for (let i = 1; i < array.length; i++) {
+//       if (array[i] < currentMin) {
+//         currentMin = array[i];
+//       }
+//     }
+//     return currentMin;
+//   }
+// }
+
+// const result = findMinmum([2, 3, 4, 5, 6, 8]);
+
+// console.log(result);
