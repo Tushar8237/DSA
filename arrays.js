@@ -168,26 +168,50 @@
 
 // anagram problem
 
-function isAnagram(string1, string2) {
-  if (string1.length !== string2.length) {
-    return false;
-  }
+// function isAnagram(string1, string2) {
+//   if (string1.length !== string2.length) {
+//     return false;
+//   }
 
-  let counter = {};
-  for (let letter of string1) {
-    counter[letter] = (counter[letter] || 0) + 1;
-  }
+//   let counter = {};
+//   for (let letter of string1) {
+//     counter[letter] = (counter[letter] || 0) + 1;
+//   }
 
-  for (let item of string2) {
-    if (!counter[item]) {
-      return false;
+//   for (let item of string2) {
+//     if (!counter[item]) {
+//       return false;
+//     }
+//     counter[item] -= 1;
+//   }
+
+//   return true;
+// }
+
+// const result = isAnagram("hello", "leloht");
+
+// console.log(result);
+
+// checking sum zero
+// [-5, -4, -3, -2, 0, 2, 4, 6, 8] input
+//  [-4,4] output
+// all other elemnet to check it sum is zero or not
+
+function findSumZeroPair(array) {
+  let left = 0;
+  let right = array.length - 1;
+  while (left < right) {
+    let sum = array[left] + array[right];
+    if (sum === 0) {
+      return [array[left], array[right]];
+    } else if (sum > 0) {
+      right--;
+    } else {
+      left++;
     }
-    counter[item] -= 1;
   }
-
-  return true;
 }
 
-const result = isAnagram("hello", "leloht");
+const result = findSumZeroPair([-5, -4, -3, -2, 0, 2, 4, 6, 8]);
 
 console.log(result);
