@@ -145,23 +145,49 @@
 
 // console.log(result);
 
-function checkIfSquareExits(array1, array2) {
-  for (let i = 0; i < array1.length; i++) {
-    let isSquare = false;
-    for (let j = 0; j < array1.length; j++) {
-      if (array1[i] * array1[i] === array2[j]) {
-        isSquare = true;
-      }
-      if (j === array2.length - 1) {
-        if (!isSquare) {
-          return false;
-        }
-      }
-    }
+// function checkIfSquareExits(array1, array2) {
+//   for (let i = 0; i < array1.length; i++) {
+//     let isSquare = false;
+//     for (let j = 0; j < array1.length; j++) {
+//       if (array1[i] * array1[i] === array2[j]) {
+//         isSquare = true;
+//       }
+//       if (j === array2.length - 1) {
+//         if (!isSquare) {
+//           return false;
+//         }
+//       }
+//     }
+//   }
+//   return true;
+// }
+
+// const result = checkIfSquareExits([1, 2, 3, 4], [1, 4, 9, 16]);
+
+// console.log(result);
+
+// anagram problem
+
+function isAnagram(string1, string2) {
+  if (string1.length !== string2.length) {
+    return false;
   }
+
+  let counter = {};
+  for (let letter of string1) {
+    counter[letter] = (counter[letter] || 0) + 1;
+  }
+
+  for (let item of string2) {
+    if (!counter[item]) {
+      return false;
+    }
+    counter[item] -= 1;
+  }
+
   return true;
 }
 
-const result = checkIfSquareExits([1, 2, 3, 4], [1, 4, 9, 16]);
+const result = isAnagram("hello", "leloht");
 
 console.log(result);
