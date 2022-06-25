@@ -197,21 +197,41 @@
 //  [-4,4] output
 // all other elemnet to check it sum is zero or not
 
-function findSumZeroPair(array) {
-  let left = 0;
-  let right = array.length - 1;
-  while (left < right) {
-    let sum = array[left] + array[right];
-    if (sum === 0) {
-      return [array[left], array[right]];
-    } else if (sum > 0) {
-      right--;
-    } else {
-      left++;
-    }
-  }
+// function findSumZeroPair(array) {
+//   let left = 0;
+//   let right = array.length - 1;
+//   while (left < right) {
+//     let sum = array[left] + array[right];
+//     if (sum === 0) {
+//       return [array[left], array[right]];
+//     } else if (sum > 0) {
+//       right--;
+//     } else {
+//       left++;
+//     }
+//   }
+// }
+
+// const result = findSumZeroPair([-5, -4, -3, -2, 0, 2, 4, 6, 8]);
+
+// console.log(result);
+
+//  find the missing number
+// Input: arr[] = {1, 2, 4, 6, 3, 7, 8}
+// Output: 5
+// Approch: the lenght of the array is n-1. so the sum of all n lements i.e sum of number from 1 to n can be calulated using the formula n*(n+1)/2.
+
+// function to get the missing number
+function getMissingNo(a, n) {
+  let total = Math.floor(((n + 1) * (n + 2)) / 2);
+  for (let i = 0; i < n; i++) total -= a[i];
+  return total;
 }
 
-const result = findSumZeroPair([-5, -4, -3, -2, 0, 2, 4, 6, 8]);
+// Driver Code
+
+let arr = [1, 2, 3, 4, 6];
+let n = arr.length;
+const result = getMissingNo(arr, n);
 
 console.log(result);
