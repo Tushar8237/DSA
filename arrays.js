@@ -222,16 +222,26 @@
 // Approch: the lenght of the array is n-1. so the sum of all n lements i.e sum of number from 1 to n can be calulated using the formula n*(n+1)/2.
 
 // function to get the missing number
-function getMissingNo(a, n) {
-  let total = Math.floor(((n + 1) * (n + 2)) / 2);
-  for (let i = 0; i < n; i++) total -= a[i];
-  return total;
-}
+// function getMissingNo(a, n) {
+//   let total = Math.floor(((n + 1) * (n + 2)) / 2);
+//   for (let i = 0; i < n; i++) total -= a[i];
+//   return total;
+// }
+// let arr = [1, 2, 3, 4, 6];
+// let n = arr.length;
+// const result = getMissingNo(arr, n);
 
-// Driver Code
+// console.log(result);
 
-let arr = [1, 2, 3, 4, 6];
-let n = arr.length;
-const result = getMissingNo(arr, n);
+// Recursive Approach
+
+const recursiveFactorial = (number) => {
+  if (number == 2) {
+    return 2;
+  }
+  return number * recursiveFactorial(number - 1);
+};
+
+const result = recursiveFactorial(3);
 
 console.log(result);
