@@ -235,13 +235,13 @@
 
 // Recursive Approach
 
-const recursiveFactorial = (number) => {
-  if (number == 2) {
-    return 2;
-  }
-  return number * recursiveFactorial(number - 1);
-};
+// const recursiveFactorial = (number) => {
+//   if (number == 2) {
+//     return 2;
+//   }
+//   return number * recursiveFactorial(number - 1);
+// };
 
-const result = recursiveFactorial(3);
+// const result = recursiveFactorial(3);
 
-console.log(result);
+// console.log(result);
