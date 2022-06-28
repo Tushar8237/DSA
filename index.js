@@ -349,3 +349,37 @@ let exp = "((()))()()";
 
 if (isBalanced(exp)) console.log("Balanced");
 else console.log("Not Balanced");
+
+// division
+function divisionTask(n) {
+  if (n <= 0) {
+    console.log("-1");
+  } else {
+    let x = Math.floor(32 / n);
+    if (x === 0) {
+      console.log("too low");
+    } else {
+      console.log(x);
+    }
+  }
+}
+
+let reuslt = divisionTask(8);
+
+console.log(reuslt);
+
+function hello(n) {
+  for (let i = 1; i < n; i++) {
+    if (i % 5 === 0) {
+      console.log("hi");
+    } else if (i % 7 === 0) {
+      console.log("Hello");
+    } else if (i % 5 === 0 && i % 7 === 0) {
+      console.log("Hello Welcome");
+    } else {
+      console.log("Hello World!");
+    }
+  }
+}
+
+console.log(hello(35));
