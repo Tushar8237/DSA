@@ -249,64 +249,95 @@
 // Normaol Approach
 // function for sum of two number
 
-function claculateTotal(n) {
-  let total = 0;
-  for (let i = 0; i <= n; i++) {
-    total += i;
-  }
-  return total;
-}
+// function claculateTotal(n) {
+//   let total = 0;
+//   for (let i = 0; i <= n; i++) {
+//     total += i;
+//   }
+//   return total;
+// }
 
 // console.log(claculateTotal(3));
 
 // recursive approach
 
-function calulatedTotalRecursion(n, total = 0) {
-  if (n === 0) {
-    return total;
-  }
-  return calulatedTotalRecursion(n - 1, (total += n));
-}
+// function calulatedTotalRecursion(n, total = 0) {
+//   if (n === 0) {
+//     return total;
+//   }
+//   return calulatedTotalRecursion(n - 1, (total += n));
+// }
 
 // console.log(calulatedTotalRecursion(3));
 
-const teamStructure = {
-  name: "Kunal",
-  teams: [
-    {
-      name: "Harish",
-      teams: [
-        {
-          name: "tushar",
-          teams: [
-            {
-              name: "pradeep",
-              teams: [],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      name: "Anurag",
-      teams: [
-        {
-          name: "anil",
-          teams: [],
-        },
-      ],
-    },
-  ],
-};
+// const teamStructure = {
+//   name: "Kunal",
+//   teams: [
+//     {
+//       name: "Harish",
+//       teams: [
+//         {
+//           name: "tushar",
+//           teams: [
+//             {
+//               name: "pradeep",
+//               teams: [],
+//             },
+//           ],
+//         },
+//       ],
+//     },
+//     {
+//       name: "Anurag",
+//       teams: [
+//         {
+//           name: "anil",
+//           teams: [],
+//         },
+//       ],
+//     },
+//   ],
+// };
 
-function getTeamDetsils(t) {
-  //   console.log("team....", t);
-  if (t.teams.length === 0) return;
+// function getTeamDetsils(t) {
+//     console.log("team....", t);
+//   if (t.teams.length === 0) return;
 
-  t.teams.forEach((team) => {
-    console.log(team);
-    getTeamDetsils(team);
-  });
-}
+//   t.teams.forEach((team) => {
+//     console.log(team);
+//     getTeamDetsils(team);
+//   });
+// }
 
-getTeamDetsils(teamStructure);
+// getTeamDetsils(teamStructure);
+
+// sum of even number
+// let numStr = [1, 2, 3, 4, 5, 6];
+
+// const sumEvens = (numStr) => {
+//   let sum = 0;
+//   for (let i = 0; i < numStr.length; i++) {
+//     if (i % 2 === 0) {
+//       sum = sum + numStr[i];
+//     }
+//   }
+//   return sum;
+// };
+
+// console.log(sumEvens(numStr));
+
+// sum of prime numbers
+
+// let numStr = [1, 2, 3, 4, 5, 6];
+
+// const sumEvens = (numStr) => {
+//   let sum = 0;
+//   for (let i = 0; i < numStr.length; i++) {
+//     if (i % 2 !== 0) {
+//       sum = sum + numStr[i];
+//     }
+//   }
+//   return sum;
+// };
+
+// console.log(sumEvens(numStr));
