@@ -355,3 +355,22 @@
 // }
 
 // console.log(max);
+
+// given an array of numbers find the average of all even numbers
+
+let numbers = [6, 7, 45, 68, 74, 4, 6];
+let even = [];
+let sum = 0;
+let count = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    sum = sum + numbers[i];
+    count++;
+
+    even.push(numbers[i]);
+  }
+}
+
+console.log("Average of even numbers", sum / count);
+console.log(even);
