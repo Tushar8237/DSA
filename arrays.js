@@ -227,7 +227,7 @@
 //   for (let i = 0; i < n; i++) total -= a[i];
 //   return total;
 // }
-// let arr = [1, 2, 3, 4, 6];
+// let arr = [1, 2, 3, 4, 5, 6, 8];
 // let n = arr.length;
 // const result = getMissingNo(arr, n);
 
