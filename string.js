@@ -39,3 +39,19 @@
 // }
 
 // console.log(output);
+
+// count all those name start with a
+
+let name = ["tushar", "roshan", "rajesh", "ankush", "anil", "pradeep", "Akash"];
+let nameWithA = [];
+let count = 0;
+for (let i = 0; i < name.length; i++) {
+  let current_name = name[i];
+
+  if (current_name[0] == "a" || current_name[0] == "A") {
+    count++;
+    nameWithA.push(current_name);
+  }
+}
+console.log(count);
+console.log(nameWithA);
