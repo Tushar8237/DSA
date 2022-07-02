@@ -374,3 +374,14 @@
 
 // console.log("Average of even numbers", sum / count);
 // console.log(even);
+
+// find the last elemnet after deleting every second element in array of n integers
+
+function removeAlternate(n) {
+  if (n == 1) return 1;
+  if (n % 2 == 0) return 2 * removeAlternate(n / 2) - 1;
+  else return 2 * removeAlternate((n - 1) / 2) + 1;
+}
+
+let n = 24;
+console.log(removeAlternate(n));
