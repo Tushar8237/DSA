@@ -94,3 +94,25 @@
 // }
 
 // console.log(count);
+
+// string using split inbuilt function
+
+// const mySplit = (input, char) => {
+//     let output = [];
+//     let s = "";
+
+//     for (let i = 0; i < input.length; i++) {
+//       if (input[i] != char) {
+//         s = s + input[i];
+//       } else {
+//         output.push(s);
+//         s = "";
+//       }
+//     }
+//     output.push(s);
+//     return output;
+//   };
+
+//   let input = "the lazy brown hello";
+//   console.log(mySplit(input, " "));
+//   console.log(input.split(" "));

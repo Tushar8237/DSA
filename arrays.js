@@ -376,12 +376,20 @@
 // console.log(even);
 
 // find the last elemnet after deleting every second element in array of n integers
+// input 5
+// output 3
+// function removeAlternate(n) {
+//   if (n == 1) return 1;
+//   if (n % 2 == 0) return 2 * removeAlternate(n / 2) - 1;
+//   else return 2 * removeAlternate((n - 1) / 2) + 1;
+// }
 
-function removeAlternate(n) {
-  if (n == 1) return 1;
-  if (n % 2 == 0) return 2 * removeAlternate(n / 2) - 1;
-  else return 2 * removeAlternate((n - 1) / 2) + 1;
-}
+// let n = 5;
+// console.log(removeAlternate(n));
 
-let n = 24;
-console.log(removeAlternate(n));
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+
+// arr.splice(0, 2);
+// arr.push(1, 2);
+
+// console.log(arr);
