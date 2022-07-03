@@ -4,27 +4,36 @@
 // 1 Generate all possible substring
 // 2 check for all generated substring if the first and last character are same then increment the count
 
-const countSubString = () => {
-  let str = "abcab";
-  let n = str.length;
-  let count = 0;
+// const countSubString = () => {
+//   let str = "abcab";
+//   let n = str.length;
+//   let count = 0;
 
-  for (let i = 0; i < n; i++) {
-    for (let j = i; j < n; j++) {
-      let bag = "";
-      for (let k = i; k <= j; k++) {
-        bag = bag + str[k];
-      }
-      var n2 = bag.length - 1;
-      if (bag[0] == bag[n2]) {
-        count++;
-        console.log(bag);
-      }
-    }
-  }
-  return count;
-};
+//   for (let i = 0; i < n; i++) {
+//     for (let j = i; j < n; j++) {
+//       let bag = "";
+//       for (let k = i; k <= j; k++) {
+//         bag = bag + str[k];
+//       }
+//       var n2 = bag.length - 1;
+//       if (bag[0] == bag[n2]) {
+//         count++;
+//         console.log(bag);
+//       }
+//     }
+//   }
+//   return count;
+// };
 
-let result = countSubString();
+// let result = countSubString();
 
-console.log("count is", result);
+// console.log("count is", result);
+
+let s1 = "madam";
+let s2 = s1.repeat();
+
+if (s1 == s2) {
+  console.log("yes");
+} else {
+  console.log("no");
+}
