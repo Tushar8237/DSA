@@ -99,13 +99,30 @@ var details = {
     };
     this.data.push(student);
   },
+  lowScore: function () {
+    let lowStudent = null;
+    let lowTotal = null;
+    for (let i = 0; i < this.data.length; i++) {
+      let currentStudent = this.data[i];
+      let total =
+        currentStudent.math + currentStudent.science + currentStudent.english;
+
+      if (lowTotal == null || total < lowTotal) {
+        lowStudent = currentStudent;
+        lowTotal = total;
+      }
+    }
+    return lowStudent;
+  },
 };
 
 details.addStudent("tushar", 66, 75, 60);
 details.addStudent("varun", 47, 70, 65);
-details.addStudent("anil", 45, 65, 50);
+details.addStudent("anil", 45, 65, 5);
 details.addStudent("akki", 75, 70, 50);
 
-for (let i = 0; i < details.data.length; i++) {
-  console.log(details.data[i].name);
-}
+// for (let i = 0; i < details.data.length; i++) {
+//   console.log(details.data[i].name);
+// }
+
+console.log(details.lowScore());
