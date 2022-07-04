@@ -87,3 +87,25 @@
 // console.log(personObj2);
 
 //  most repeating word
+
+var details = {
+  data: [],
+  addStudent: function (nm, math, sci, eng) {
+    var student = {
+      name: nm,
+      maths: math,
+      science: sci,
+      english: eng,
+    };
+    this.data.push(student);
+  },
+};
+
+details.addStudent("tushar", 66, 75, 60);
+details.addStudent("varun", 47, 70, 65);
+details.addStudent("anil", 45, 65, 50);
+details.addStudent("akki", 75, 70, 50);
+
+for (let i = 0; i < details.data.length; i++) {
+  console.log(details.data[i].name);
+}
