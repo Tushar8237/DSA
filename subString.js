@@ -29,11 +29,11 @@
 
 // console.log("count is", result);
 
-let s1 = "madam";
-let s2 = s1.repeat();
+// let s1 = "madam";
+// let s2 = s1.repeat();
 
-if (s1 == s2) {
-  console.log("yes");
-} else {
-  console.log("no");
-}
+// if (s1 == s2) {
+//   console.log("yes");
+// } else {
+//   console.log("no");
+// }
