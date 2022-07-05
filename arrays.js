@@ -403,3 +403,47 @@
 //   if (temp < arr[i]) temp = arr[i];
 // }
 // console.log(temp);
+
+// Write your code here
+// let ar = [1, 2, 3, 4, 10, 11];
+// const sum = (ar) => {
+//   let sum = 0;
+//   for (let i = 0; i < ar.length; i++) {
+//     sum = sum + ar[i];
+//   }
+//   return sum;
+// };
+
+// let result = sum([1, 2, 3, 4, 10, 11, 9]);
+
+// console.log(result);
+
+const arr = [];
+
+try {
+  arr.push("try");
+  throw new Error();
+} catch (e) {
+  arr.push("catch");
+} finally {
+  arr.push("finally");
+}
+
+console.log(arr);
+
+let green;
+
+green = false;
+console.log(green);
+
+const myaar = new aar(2);
+
+myaaray[1] = 1;
+myarray[3] = 3;
+
+console.log("lenght", myaar.length);
+
+console.log("elemnt");
+for (const element of myaar) {
+  console.log("/t", element);
+}
