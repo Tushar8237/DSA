@@ -26,6 +26,6 @@ function compare(a, b) {
   return result;
 }
 
-let output = compare([1, 2, 3, 10], [3, 4, 1, 9]);
+let output = compare([1, 2, 3, 10, 38], [3, 4, 1, 9, 24]);
 
 console.log(output);
