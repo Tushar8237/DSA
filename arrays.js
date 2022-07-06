@@ -418,32 +418,44 @@
 
 // console.log(result);
 
-const arr = [];
+// const arr = [];
 
-try {
-  arr.push("try");
-  throw new Error();
-} catch (e) {
-  arr.push("catch");
-} finally {
-  arr.push("finally");
+// try {
+//   arr.push("try");
+//   throw new Error();
+// } catch (e) {
+//   arr.push("catch");
+// } finally {
+//   arr.push("finally");
+// }
+
+// console.log(arr);
+
+// let green;
+
+// green = false;
+// console.log(green);
+
+// const myaar = new aar(2);
+
+// myaaray[1] = 1;
+// myarray[3] = 3;
+
+// console.log("lenght", myaar.length);
+
+// console.log("elemnt");
+// for (const element of myaar) {
+//   console.log("/t", element);
+// }
+
+let aar = [34, 45, 56, 86, 75, 104, 34];
+
+let temp = 0;
+
+for (let i = 0; i < aar.length; i++) {
+  if (temp < aar[i]) {
+    temp = aar[i];
+  }
 }
 
-console.log(arr);
-
-let green;
-
-green = false;
-console.log(green);
-
-const myaar = new aar(2);
-
-myaaray[1] = 1;
-myarray[3] = 3;
-
-console.log("lenght", myaar.length);
-
-console.log("elemnt");
-for (const element of myaar) {
-  console.log("/t", element);
-}
+console.log(temp);
