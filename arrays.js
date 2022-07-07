@@ -458,4 +458,44 @@ for (let i = 0; i < aar.length; i++) {
   }
 }
 
-console.log(temp);
+// console.log(temp);
+// for (let j = 0; j < 3; j++) {
+//   for (let i = 0; i < 3; i++) {
+//     console.log("hello world");
+//   }
+//   console.log("\n");
+// }
+
+for (let j = 1; j <= 5; j++) {
+  let bag = "";
+
+  for (let i = 0; i < 5; i++) {
+    bag = bag + " * ";
+  }
+  console.log(bag);
+}
+
+for (let i = 1; i <= 5; i++) {
+  var bag = "";
+
+  for (let j = 1; j <= i; j++) {
+    bag = bag + "  " + j;
+  }
+  console.log(bag);
+}
+
+for (let i = 1; i <= 5; i++) {
+  var bag = "";
+  for (let j = 1; j <= i; j++) {
+    bag = bag + " * ";
+  }
+  console.log(bag);
+}
+
+for (let i = 1; i <= 5; i++) {
+  var bag = "";
+  for (let j = 1; j <= i; j++) {
+    bag = bag + "  " + j;
+  }
+  console.log(bag);
+}
