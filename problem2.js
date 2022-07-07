@@ -24,7 +24,8 @@ function diagonal(aar) {
       }
     }
   }
-  return right - left;
+  // return right - left;
+  return Math.abs(right - left);
 }
 
 let aar = [
