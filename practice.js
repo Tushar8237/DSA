@@ -1,4 +1,4 @@
-const piramid = (n) => {
+const pyramid = (n) => {
   for (let i = 0; i < n; i++) {
     let string = "";
     for (let j = 0; j < n - i - 1; j++) {
@@ -11,4 +11,4 @@ const piramid = (n) => {
   }
 };
 
-piramid(6);
+pyramid(6);
