@@ -72,3 +72,37 @@ console.log(num);
 // // Driver code
 // let arr = [12, 3, 4, 15];
 // console.log("Sum of given array is " + sum(arr));
+
+let y = 1992;
+
+if (y % 400 == 0) {
+  console.log("leap year");
+} else if (y % 100 == 0) {
+  console.log("not leap year");
+} else if (y % 4 == 0) {
+  console.log("leap year");
+} else {
+  console.log("not leap year");
+}
+
+let n = 9;
+let count = 0;
+for (let i = 0; i <= n; i++) {
+  if (n % i == 0) {
+    count++;
+  }
+}
+
+if (count == 2) {
+  console.log("yes");
+} else {
+  console.log("no");
+}
+
+for (let i = 1; i <= 4; i++) {
+  let star = "";
+  for (let j = 1; j <= i; j++) {
+    star = star + "*";
+  }
+  console.log(star);
+}
