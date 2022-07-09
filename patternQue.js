@@ -144,3 +144,39 @@ for (let i = 1; i <= n - 1; i++) {
   string += "\n";
 }
 console.log(string);
+
+//  Heart star pattern
+//  Heart star pattern is a quite complex structure to create.
+var num = 6;
+var str = "";
+for (let i = num / 2; i < num; i += 2) {
+  // print first spaces
+  for (let j = 1; j < num - i; j += 2) {
+    str += " ";
+  }
+  // print first stars
+  for (let j = 1; j < i + 1; j++) {
+    str += "*";
+  }
+  // print second spaces
+  for (let j = 1; j < num - i + 1; j++) {
+    str += " ";
+  }
+  // print second stars
+  for (let j = 1; j < i + 1; j++) {
+    str += "*";
+  }
+  str += "\n";
+}
+// lower part
+// inverted pyramid
+for (let i = num; i > 0; i--) {
+  for (let j = 0; j < num - i; j++) {
+    str += " ";
+  }
+  for (let j = 1; j < i * 2; j++) {
+    str += "*";
+  }
+  str += "\n";
+}
+console.log(str);
