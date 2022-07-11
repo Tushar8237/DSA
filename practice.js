@@ -106,3 +106,20 @@ for (let i = 1; i <= 4; i++) {
   }
   console.log(star);
 }
+
+let arr = [4, 5, 9, 10, 12, 45, 84, 99, 100, 444];
+let sum = 0;
+let counter = 0;
+let even = 0;
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 == 0) {
+    sum = sum + arr[i];
+    counter++;
+
+    even = even + arr[i];
+  }
+}
+
+console.log(sum / counter);
+console.log(even);
