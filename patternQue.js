@@ -4,7 +4,7 @@
 //   for (let i = 0; i < 5; i++) {
 //     bag = bag + " * ";
 //   }
-//   console.log(bag);
+// console.log(bag);
 // }
 
 for (let i = 1; i <= 5; i++) {
@@ -13,7 +13,7 @@ for (let i = 1; i <= 5; i++) {
   for (let j = 1; j <= i; j++) {
     bag = bag + "  " + j;
   }
-  console.log(bag);
+  // console.log(bag);
 }
 
 for (let i = 1; i <= 5; i++) {
@@ -29,7 +29,7 @@ for (let i = 1; i <= 5; i++) {
 //   for (let j = 1; j <= i; j++) {
 //     bag = bag + "  " + j;
 //   }
-//   console.log(bag);
+console.log(bag);
 // }
 
 // Right pascal star pattern
@@ -180,3 +180,14 @@ for (let i = num; i > 0; i--) {
   str += "\n";
 }
 console.log(str);
+
+let star = 6;
+for (let i = 1; i <= star; i++) {
+  let bag = " ";
+  for (let j = 1; j <= star - i; j++) {
+    bag = bag + "*";
+  }
+  console.log(bag);
+}
+
+// console.log(bag);
