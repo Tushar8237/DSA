@@ -160,3 +160,48 @@ let popNumber2 = numberPop.pop();
 console.log(popNumber, popNumber1, popNumber2);
 console.log(pushNum);
 console.log(numberPop);
+
+// 11 reduce()
+// Javascript array reduce() method applies a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value.
+// syntax
+// array.reduce(callback[, initialValue]);
+// callback − Function to execute on each value in the array.
+// initialValue − Object to use as the first argument to the first call of the callback.
+// Returns the reduced single value of the array.
+
+var total = [2, 4, 6, 7, 8, 9, 100];
+
+const sum = total.reduce((a, b) => a + b);
+
+console.log(sum);
+
+var totalSum = [34, 45, 54, 5, 65, 87, 69, 90];
+
+var sumTotal = totalSum.reduce((a, b) => a + b);
+
+console.log("sum of array is : " + sumTotal);
+
+// 12 reduceRight()
+// Apply a function simultaneously against two values of the array (from right-to-left) as to reduce it to a single value.
+// syntax
+// array.reduceRight(callback[, initialValue]);
+// Returns the reduced right single value of the array.
+
+let reduceRight = [23, 45, 65, 100, 67, 22, 99, 9];
+
+let totalValue = reduceRight.reduceRight((a, b) => a + b);
+
+console.log("sum from right to left : " + totalValue);
+
+// 13 reverse()
+// Reverses the order of the elements of an array -- the first becomes the last, and the last becomes the first.
+// syntax
+// array.reverse();
+// Returns the reversed single value of the array.
+
+var number = [4, 5, 6, 7, 90, 34, 23].reverse();
+
+console.log("Reverse array is : " + number);
+
+var string = ["nagpur", "mumbai", "delhi", "banglore"].reverse();
+console.log(string);
