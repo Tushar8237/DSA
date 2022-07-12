@@ -243,3 +243,49 @@ function somefunc(element) {
 let retval = [2, 5, 2, 8, 4].some(somefunc);
 
 console.log("return value is : " + retval);
+
+// 17 sort()
+// Sorts the elements of an array.
+// syntax
+// array.sort( compareFunction );
+// Returns a sorted array
+
+let sortArray = [67, 45, 34, 29, 20, 15, 99].sort();
+let sorted = ["orange", "mango", "banana", "sugar"].sort();
+console.log("sorted array is : " + sortArray);
+console.log("sorted array is : " + sorted);
+
+// 18 splice()
+// Adds and/or removes elements from an array.
+// syntax
+// array.splice(index, howMany, [element1][, ..., elementN]);
+// Returns the extracted array based on the passed parameters.
+
+var array = ["orange", "mango", "banana", "sugar", "tea"];
+
+var removed = array.splice(2, 0, "water");
+console.log(array);
+
+var removes = array.splice(3, 1);
+console.log(removes);
+
+// 19 toString()
+// Returns a string representing the array and its elements.
+// syntax
+// array.toString();
+// Returns a string representing the array
+
+let toStrings = new Array("orange", "mango", "banana", "sugar").toString();
+console.log(toStrings);
+
+// 20 unshift()
+// Adds one or more elements to the front of an array and returns the new length of the array.
+// syntax
+// array.unshift( element1, ..., elementN );
+// Returns the length of the new array
+
+let newString = new Array("orange", "mango", "banana", "sugar");
+var length = newString.unshift("water");
+
+console.log(newString);
+console.log(length);
