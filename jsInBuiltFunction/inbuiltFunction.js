@@ -205,3 +205,41 @@ console.log("Reverse array is : " + number);
 
 var string = ["nagpur", "mumbai", "delhi", "banglore"].reverse();
 console.log(string);
+
+// 14 shift()
+// Reverses the order of the elements of an array -- the first becomes the last, and the last becomes the first.
+// syntax
+// array.shift();
+// Returns the removed single value of the array.
+
+let shiftElement = [34, 45, 67, 78, 97].shift();
+console.log("shift element is :" + shiftElement);
+
+// 15 slice()
+// Extracts a section of an array and returns a new array.
+// syntax
+// array.slice
+// Returns the extracted array based on the passed parameters.
+
+let slice = [4, 5, 89, 23, 78].slice(2);
+console.log("new array is : " + slice);
+
+let strSlice = ["mango", "orange", "apple", "banana"].slice(1);
+console.log("new array is : " + strSlice);
+
+// 16 sum()
+// Returns true if at least one element in this array satisfies the provided testing function.
+// syntax
+// array.some(callback[, thisObject]);
+// callback − Function to test for each element.
+// thisObject − Object to use as this when executing callback.
+// If some element pass the test, then it returns true, otherwise false.
+
+function somefunc(element) {
+  return element >= 10;
+}
+
+// let retval = [2, 5, 2, 8, 4, 10].some(somefunc);
+let retval = [2, 5, 2, 8, 4].some(somefunc);
+
+console.log("return value is : " + retval);
