@@ -58,3 +58,41 @@ let matchStr = "for more information see chapter 3.4.5.1";
 var re = /(chapter \d+(\.\d)*)/i;
 var found = str.match(re);
 console.log(found);
+
+// 7 replace()
+// Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.
+// string.replace(regexp/substr, newSubStr/function[, flags]);
+var re = /apples/gi;
+let replaceStr = "Apples are found, and apple are juicy";
+let newStr = replaceStr.replace(re, "orange");
+console.log(newStr);
+
+// 8 search()
+// Executes the search for a match between a regular expression and a specified string.
+// string.search(regexp);
+
+let reStr = /apples/gi;
+let searchStr = "Apples are round, and apples are juicy.";
+if (searchStr.search(reStr) == -1) {
+  console.log("does not contain apples");
+} else {
+  console.log("containS apples");
+}
+
+// 9 split()
+// Splits a String object into an array of strings by separating the string into substrings.
+// string.split([separator][, limit]);
+
+var str = "apples are round, and apples are juicy";
+var splitted = str.split(" ", 4);
+console.log(splitted);
+
+// 10 	substr()
+// Returns the characters in a string beginning at the specified location through the specified number of characters.
+
+var strSub = "Apples are round, and apples are juicy.";
+console.log(str.substr(0, 2));
+console.log(strSub.substr(-2, 2));
+console.log(strSub.substr(1));
+console.log(strSub.substr(-20, 2));
+console.log(strSub.substr(20, 2));
