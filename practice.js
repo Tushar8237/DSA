@@ -134,8 +134,15 @@ let user = {
 };
 // console.log(user);
 
-user.name = "tom";
-delete user.smoking;
-console.log(user);
-console.log(user.city);
-console.log(user.hobbies[0]);
+// user.name = "tom";
+// delete user.smoking;
+// console.log(user);
+// console.log(user.city);
+// console.log(user.hobbies[0]);
+
+// for (let key in user) {
+//   console.log(key + " : " + user[key]);
+// }
+
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
