@@ -123,3 +123,19 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log(sum / counter);
 console.log(even);
+
+let user = {
+  name: "peter",
+  age: 20,
+  gender: "male",
+  city: "banglore",
+  hobbies: ["coding", "reading", "walking", "traveling"],
+  smoking: false,
+};
+// console.log(user);
+
+user.name = "tom";
+delete user.smoking;
+console.log(user);
+console.log(user.city);
+console.log(user.hobbies[0]);
