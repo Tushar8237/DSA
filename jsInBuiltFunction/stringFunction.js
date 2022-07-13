@@ -96,3 +96,38 @@ console.log(strSub.substr(-2, 2));
 console.log(strSub.substr(1));
 console.log(strSub.substr(-20, 2));
 console.log(strSub.substr(20, 2));
+
+// 11 toLocaleLowerCase() & 12 toLocalUpperCase
+// The characters within a string are converted to lower case while respecting the current locale.
+// string.toLocaleLowerCase( )
+// string.toLocaleUpperCase( )
+
+let toLocalLowerCase = "THIS IS STRING";
+let toLocalUpperCase = "this is string";
+
+console.log(toLocalLowerCase.toLocaleLowerCase());
+console.log(toLocalUpperCase.toLocaleUpperCase());
+
+// 13 toLowerCase() and 14 toUpperCase
+// Returns the calling string value converted to lower case.
+// string.toLowerCase( )
+// string.toUpperCase( )
+
+let lowerStr = "THIS IS STRING";
+let upperStr = "this is string";
+console.log(lowerStr.toLowerCase());
+console.log(lowerStr.toUpperCase());
+
+// 15 toString()
+// Returns a string representing the specified object.
+// string.toString( )
+
+let toStr = "apple are round and apple are juicy";
+console.log(toStr.toString());
+
+// 16 valueof()
+// Returns the primitive value of the specified object.
+// string.valueOf( )
+
+let valueStr = "This method returns the primitive value of a String object.";
+console.log(valueStr.valueOf());
