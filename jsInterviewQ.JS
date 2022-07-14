@@ -92,3 +92,43 @@ function swap(a, i, j) {
 let str = "ABCD";
 let string = str.length;
 permute(str, 0, string - 1);
+
+// explain the callback function and provide a simple example?
+// a callback function is a function that is passed to another function as an argument and is execute after some operation has been completed.
+
+// how do you check if number is integer?
+// a very simple way to check if a number is a decimal or integer is to see if there is a remainder left when you divide by 1
+
+function isInt(num) {
+  return num % 1 === 0;
+}
+
+console.log(isInt(4));
+console.log(isInt(12.2));
+console.log(isInt(0.3));
+
+// make this work
+
+duplicate([1, 2, 3, 4, 5]);
+
+function duplicate(arr) {
+  return arr.concat(arr);
+}
+
+console.log(duplicate([1, 2, 3, 4, 5]));
+
+// Fizz buzz challenge
+
+// Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5.
+
+for (let i = 1; i <= 100; i++) {
+  let f = i % 3 == 0;
+  b = i % 5 == 0;
+  console.log(f ? (b ? "Fizzbuzz" : "Fizz") : b ? "Buzz" : i);
+}
+
+var y = 1;
+if (function f() {}) {
+  y += typeof f;
+}
+console.log(y);
