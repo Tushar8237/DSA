@@ -127,6 +127,8 @@ for (let i = 1; i <= 100; i++) {
   console.log(f ? (b ? "Fizzbuzz" : "Fizz") : b ? "Buzz" : i);
 }
 
+// what will be the output of the following code?
+
 var y = 1;
 if (function f() {}) {
   y += typeof f;
