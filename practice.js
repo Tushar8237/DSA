@@ -146,3 +146,71 @@ let user = {
 
 // console.log(Object.keys(user));
 // console.log(Object.values(user));
+
+let students = [
+  { name: "rahul", age: 23 },
+  { name: "rajat", age: 18 },
+  { name: "shubham", age: 20 },
+];
+
+for (let i = 0; i < students.length; i++) {
+  console.log(students[i].name, " ", students[i].age);
+}
+
+var data = {
+  name: "rajat",
+  age: 23,
+  xyz: function (num1, num2) {
+    // console.log(num1 + num2);
+    console.log("hello", this.name);
+    console.log("age is", this.age);
+  },
+};
+
+// console.log(data.name);
+// let surname = "rawat";
+// let name = "subham";
+// data.xyz(name, surname);
+// data.xyz(57, 78);
+data.xyz();
+data.name = "varun";
+data.xyz();
+
+let details = {
+  name: "Earphone",
+  quantity: 30,
+  buy: function () {
+    console.log(" congrats : 1 order is placed");
+    this.quantity = this.quantity - 1;
+  },
+};
+
+details.buy();
+details.buy();
+details.buy();
+
+console.log(details.quantity);
+
+let ecommerce = {
+  name: "vatsal",
+  product: ["soap", "shampoo", "phone", "books"],
+  cart: [],
+
+  getProduct: function () {
+    console.log(this.product);
+  },
+  getCart: function () {
+    console.log(this.cart);
+  },
+
+  addProduct: function (x) {
+    this.cart.push(x);
+  },
+};
+
+ecommerce.getProduct();
+ecommerce.getCart();
+ecommerce.addProduct("soap");
+ecommerce.addProduct("phone");
+ecommerce.getCart();
+ecommerce.getProduct();
