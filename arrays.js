@@ -465,3 +465,26 @@ for (let i = 0; i < aar.length; i++) {
 //   }
 //   console.log("\n");
 // }
+
+// Find a peak element
+// Input array = [5, 10, 20, 15]
+// output 20
+// The element 20 has neighbour 10 15 both of them are less than 20
+
+function findPeak(arr, n) {
+  // first or last element is peak element
+  if (n == 1) return 0;
+  if (arr[0] >= arr[1]) return 0;
+  if (arr[n - 1] >= arr[n - 2]) return n - 1;
+
+  // check if the neighbour are smaller
+  for (let i = 1; i < n - 1; i++) {
+    // check if the neighbour are smaller
+    if (arr[i] >= arr[i - 1] && arr[i] >= arr[i + 1]) return i;
+  }
+}
+
+let arr = [1, 3, 4, 5, 7, 6];
+let n = arr.length;
+
+console.log("index of peak point is " + findPeak(arr, n));
