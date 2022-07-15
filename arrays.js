@@ -488,3 +488,43 @@ let arr = [1, 3, 4, 5, 7, 6];
 let n = arr.length;
 
 console.log("index of peak point is " + findPeak(arr, n));
+
+// Find the min and max number in array
+
+function findMinMax(arr, n) {
+  minmax = new Array();
+  let i;
+  let min;
+  let max;
+  // if their is only one element then return it as min and max both
+  if (n == 1) {
+    minmax.max = arr[0];
+    minmax.min = arr[0];
+    return minmax;
+  }
+  // if their are more than one elemnet then initialize min and max
+  if (arr[0] > arr[1]) {
+    minmax.max = arr[0];
+    minmax.min = arr[1];
+  } else {
+    minmax.min = arr[1];
+    minmax.max = arr[0];
+  }
+
+  for (let i = 2; i < n; i++) {
+    if (arr[i] > minmax.max) {
+      minmax.max = arr[i];
+    } else if (arr[i] < minmax.min) {
+      minmax.min = arr[i];
+    }
+  }
+  return minmax;
+}
+
+let arr1 = [1000, 11, 44, 1, 3000, 5000];
+let arr1_size = 6;
+
+minmax = findMinMax(arr1, arr1_size);
+
+console.log(minmax.min);
+console.log(minmax.max);
