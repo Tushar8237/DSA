@@ -528,3 +528,32 @@ minmax = findMinMax(arr1, arr1_size);
 
 console.log(minmax.min);
 console.log(minmax.max);
+
+// write a proggram to reverse an array
+// input [1,2,3,4,5]
+// output[5,4,3,2,1]
+
+let reverseArray = [1, 2, 3, 4, 5].reverse();
+
+console.log(reverseArray);
+
+// let sortArray = [2, 4, 7, 1, 3, 80].sort();
+// console.log(sortArray);
+
+let numbers = [0, 1, 2, 3, 10, 20, 30, 4, 6, 5];
+numbers.sort(function (a, b) {
+  if (a > b) return 1;
+  if (a < b) return -1;
+  return 0;
+});
+
+console.log(numbers);
+
+let sort = [78, 90, 21, 34, 10, 13, 2, 1, 0, 5, -1, -2, 0.0];
+sort.sort(function (a, b) {
+  if (a > b) return 1;
+  if (a < b) return -1;
+  return 0;
+});
+
+console.log(sort);
