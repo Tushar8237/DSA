@@ -557,3 +557,19 @@ sort.sort(function (a, b) {
 });
 
 console.log(sort);
+
+// Kth smallest/Largest element in unsorted array
+
+function kth(arr, n, k) {
+  // sort the given array
+  arr.sort((a, b) => a - b);
+  console.log(arr);
+  // return kth elemnet in the sorted array
+  return arr[k - 1];
+}
+
+let sorted = [12, 3, 4, 5, 7];
+let kt = sorted.length;
+let k = 2;
+
+console.log(kth(sorted, kt, k));
