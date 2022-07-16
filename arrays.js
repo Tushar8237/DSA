@@ -588,3 +588,26 @@ let occuArray = [1, 2, 2, 2, 2, 2, 3, 4, 7, 8, 8, 8, 8, 8, 8];
 let nOccu = occuArray.length;
 let x = 8;
 console.log(findoccurrence(occuArray, nOccu, x));
+
+let arraySort = [9, 4, 8, 5, 99, 3, 6, 2, 1].sort();
+let sortedA = [
+  "z",
+  "t",
+  "s",
+  "m",
+  "j",
+  "k",
+  "l",
+  "i",
+  "h",
+  "g",
+  "f",
+  "e",
+  "d",
+  "c",
+  "b",
+  "a",
+].sort();
+
+console.log("sorted array is :" + arraySort);
+console.log(sortedA);
