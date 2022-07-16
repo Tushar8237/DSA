@@ -573,3 +573,18 @@ let kt = sorted.length;
 let k = 2;
 
 console.log(kth(sorted, kt, k));
+
+// count number of occurrences in a sorterd array
+
+function findoccurrence(arr, n, x) {
+  let count = 0;
+  for (let i = 0; i < n; i++) {
+    if (x == arr[i]) count++;
+  }
+  return count;
+}
+
+let occuArray = [1, 2, 2, 2, 2, 2, 3, 4, 7, 8, 8, 8, 8, 8, 8];
+let nOccu = occuArray.length;
+let x = 8;
+console.log(findoccurrence(occuArray, nOccu, x));
