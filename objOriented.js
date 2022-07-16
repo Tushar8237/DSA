@@ -94,3 +94,23 @@ let bike4 = new Vehicle1("Activa", "Honda", "125cc");
 console.log(bike3.name);
 console.log(bike4.maker, bike4.maker, bike4.engine);
 console.log(bike3.getDetail());
+
+// Encapsulation
+/* Encapsulation – The process of wrapping properties and functions within a single unit is known as encapsulation */
+
+class personData {
+  constructor(name, id) {
+    this.name = name;
+    this.id = id;
+  }
+  addAddress(add) {
+    this.add = add;
+  }
+  getPersonDetail() {
+    console.log(`Name is ${this.name}, Address is :  ${this.add}`);
+  }
+}
+
+let person3 = new personData("Mukul", 21);
+person3.addAddress("Delhi");
+person3.getPersonDetail();
