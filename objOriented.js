@@ -114,3 +114,31 @@ class personData {
 let person3 = new personData("Mukul", 21);
 person3.addAddress("Delhi");
 person3.getPersonDetail();
+
+// Inheritance
+/* Inheritance – It is a concept in which some properties and methods of an Object are being used by another Object. Unlike most of the OOP languages where classes inherit classes, JavaScript Objects inherit Objects i.e. certain features (property and methods) of one object can be reused by other Objects.  */
+
+// Inheritance example
+
+class newPerson {
+  constructor(name) {
+    this.name = name;
+  }
+  // method to returt the string
+  toString() {
+    return `Name of the person : ${this.name}`;
+  }
+}
+class student extends newPerson {
+  constructor(name, id) {
+    // super keyword for calling the above class constructor
+    super(name);
+    this.id = id;
+  }
+  toString() {
+    return `${super.toString()}, Student ID: ${this.id}`;
+  }
+}
+
+let student1 = new student("Mukul", 22);
+console.log(student1.toString());
