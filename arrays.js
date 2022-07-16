@@ -611,3 +611,32 @@ let sortedA = [
 
 console.log("sorted array is :" + arraySort);
 console.log(sortedA);
+
+var arrS = [2, 5, 8, 1, 4];
+arrS.sort(function (a, b) {
+  return a + 2 * b;
+});
+console.log(arrS);
+
+function subArraySum(arr, n, sum) {
+  let curSum = 0;
+  for (let i = 0; i < n; i++) {
+    curSum = arr[i];
+    // try all subarrays starting with 'i'
+    for (let j = i + 1; j < n; j++) {
+      if (curSum == sum) {
+        console.log("sum found between indexes " + i + " and " + (j - 1));
+        return;
+      }
+      if (curSum > sum || j == n) break;
+      curSum = curSum + arr[j];
+    }
+  }
+  console.log("No subArray found");
+  return;
+}
+
+let subArray = [15, 2, 4, 5, 8, 9, 5, 10, 23];
+let nArray = subArray.length;
+let sum = 28;
+subArraySum(subArray, nArray, sum);
