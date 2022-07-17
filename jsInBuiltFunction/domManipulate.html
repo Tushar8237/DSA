@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter value 1:</label>
+    <input type="text" id="val1" />
+    <br />
+    <label>Enter value 2:</label>
+    <input type="text" id="val2" style="margin-top: 5px;"/>
+    <br />
+    <button onclick="getAdd()">click to add</button>
+    <p id="result"></p>
+
+    <script>
+        function getAdd () {
+            // Fetch the value of input with id val1
+            const num1 = Number(document.getElementById("val1").value)
+
+            // Fetch the value of input with id val2
+            const num2 = Number(document.getElementById("val2").value)
+            const add = num1 * num2
+            console.log(add)
+
+            // Displays the result in paragraph using dom
+            document.getElementById("result").innerHTML = "Addition : " + add
+
+            // Change the color of paragraph tag with red
+            document.getElementById("result").style.color = "red";
+
+        }
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> -->
+    <!-- in this example we use html elements id to find the dom html -->
+    <!-- <h2>this is a string</h2>
+    <p id="intro">a computer science portal for students</p>
+    <p>this example illustrates the <b>get element by id</b> method.</p>
+    <p id="demo"></p> -->
+    <!-- this example describe the representation of the html elements in the tree structure -->
+    <!-- <table border="1">
+        <ROWS>
+            <tr>
+                <td>Car</td>
+                <td>Scooter</td>
+            </tr>
+            <tr>
+                <td>Motorbike</td>
+                <td>Bus</td>
+            </tr>
+        </ROWS>
+    </table>
+
+    <script>
+        const element = document.getElementById("intro")
+        document.getElementById("demo").innerHTML = "geeksforgeeks introduction is : " + element.innerHTML
+    </script>
+</body>
+</html> -->
