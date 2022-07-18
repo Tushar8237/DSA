@@ -640,3 +640,31 @@ let subArray = [15, 2, 4, 5, 8, 9, 5, 10, 23];
 let nArray = subArray.length;
 let sum = 28;
 subArraySum(subArray, nArray, sum);
+
+// Move all negative elements to end
+/* Given an unsorted array arr[] of both negative and positive integer. the tak is place all negative elements at the end of array without changing the order of positive element and negative element */
+
+// input = [1, -1, 3, 2, -7, -5, 11, 6]
+// output = [1, 3, 2, 11, 6, -1, -7, -5]
+
+function segregateElemnets(arr, n) {
+  // creat an empty array to store result
+  let temp = new Array(n);
+
+  // traversal array and store +ve elements in temp array
+  let j = 0; //index of temp
+  for (let i = 0; i < n; i++) if (arr[i] >= 0) temp[j++] = arr[i];
+
+  // if array contains all positive or all negative
+  if (j == n || j == 0) return;
+  // store -ve elements in trmp array
+  for (let i = 0; i < n; i++) if (arr[i] < 0) temp[j++] = arr[i];
+  for (let i = 0; i < n; i++) arr[i] = temp[i];
+}
+
+let segregateArr = [1, -1, -3, -2, 7, 5, 11, 6];
+let segregateN = segregateArr.length;
+
+segregateElemnets(segregateArr, segregateN);
+
+for (let i = 0; i < n; i++) console.log(segregateArr[i] + " ");
