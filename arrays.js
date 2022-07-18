@@ -668,3 +668,32 @@ let segregateN = segregateArr.length;
 segregateElemnets(segregateArr, segregateN);
 
 for (let i = 0; i < n; i++) console.log(segregateArr[i] + " ");
+
+// Union and intersection of two sorted arrays
+// given two sorted arrays, find their union and intersection
+
+function printUnion(unionArray1, unionArray2, m, n) {
+  var i = 0;
+  var j = 0;
+  while (i < m && j < n) {
+    if (unionArray1[i] < unionArray2[j]) {
+      console.log(unionArray1[i++] + " ");
+    } else if (unionArray2[j] < unionArray1[i]) {
+      console.log(unionArray2[j++] + " ");
+    } else {
+      console.log(unionArray2[j++] + " ");
+      i++;
+    }
+  }
+  /* print remaining elemets of the larger array */
+  while (i < m) console.log(unionArray1[i++] + " ");
+  while (j < n) console.log(unionArray2[j++] + " ");
+  return 0;
+}
+
+var unionArray1 = [1, 2, 4, 5, 6];
+var unionArray2 = [2, 3, 5, 7, 8];
+var m = unionArray1.length;
+var unionN = unionArray2.length;
+
+printUnion(unionArray1, unionArray2, m, unionN);
