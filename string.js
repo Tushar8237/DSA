@@ -116,3 +116,22 @@ const mySplit = (input, char) => {
 let input = "the lazy brown hello";
 console.log(mySplit(input, " "));
 console.log(input.split(" "));
+
+let string = "hello";
+let temp = 2;
+
+for (let i = 0; i < string.length; i++) {
+  if (string[i] == temp) console.log(string[i]);
+}
+console.log();
+
+function str(a, n) {
+  let str1 = a;
+  str1.char;
+}
+
+str("hello", 2);
+
+let string5 = "hello";
+let s = string5.charAt[2];
+console.log(string5[2]);
