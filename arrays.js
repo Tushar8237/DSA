@@ -713,3 +713,36 @@ console.log("Given array is <br>");
 for (var i = 0; i < n; i++) console.log(arr[i] + " ");
 
 rotate(rotateArray, rotateN);
+
+// find the missing number
+
+function getmissingOne(missingNo, missingN) {
+  let total = Math.floor(((n + 1) * (n + 2)) / 2);
+  for (let i = 0; i < missingN; i++) {
+    total -= missingNo[i];
+  }
+  return total;
+}
+
+let missingNo = [1, 2, 3, 5];
+let missingN = missingNo.length;
+let missNo = getmissingOne(missingNo, missingN);
+console.log(missNo);
+
+function getMissingNo(a, n) {
+  let i,
+    total = 1;
+
+  for (i = 2; i <= n + 1; i++) {
+    total += i;
+    total -= a[i - 2];
+  }
+  return total;
+}
+
+//Driver Program
+let arr5 = [1, 2, 3, 5];
+let N = arr.length;
+
+// Function call
+console.log(getMissingNo(arr5, N));
