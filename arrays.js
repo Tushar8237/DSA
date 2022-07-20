@@ -697,3 +697,19 @@ var m = unionArray1.length;
 var unionN = unionArray2.length;
 
 printUnion(unionArray1, unionArray2, m, unionN);
+
+// to cyclically rotate an array by one
+
+function rotate(arr, n) {
+  var x = arr[n - 1],
+    i;
+  for (i = n - 1; i > 0; i--) arr[i] = arr[i - 1];
+  arr[0] = x;
+}
+var rotateArray = [1, 2, 3, 4, 5];
+var rotateN = rotateArray.length;
+
+console.log("Given array is <br>");
+for (var i = 0; i < n; i++) console.log(arr[i] + " ");
+
+rotate(rotateArray, rotateN);
