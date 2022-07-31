@@ -97,41 +97,58 @@
 
 // string using split inbuilt function
 
-const mySplit = (input, char) => {
-  let output = [];
-  let s = "";
+// const mySplit = (input, char) => {
+//   let output = [];
+//   let s = "";
 
-  for (let i = 0; i < input.length; i++) {
-    if (input[i] != char) {
-      s = s + input[i];
-    } else {
-      output.push(s);
-      s = "";
-    }
-  }
-  output.push(s);
-  return output;
+//   for (let i = 0; i < input.length; i++) {
+//     if (input[i] != char) {
+//       s = s + input[i];
+//     } else {
+//       output.push(s);
+//       s = "";
+//     }
+//   }
+//   output.push(s);
+//   return output;
+// };
+
+// let input = "the lazy brown hello";
+// console.log(mySplit(input, " "));
+// console.log(input.split(" "));
+
+// let string = "hello";
+// let temp = 2;
+
+// for (let i = 0; i < string.length; i++) {
+//   if (string[i] == temp) console.log(string[i]);
+// }
+// console.log();
+
+// function str(a, n) {
+//   let str1 = a;
+//   str1.char;
+// }
+
+// str("hello", 2);
+
+// let string5 = "hello";
+// let s = string5.charAt[2];
+// console.log(string5[2]);
+
+// we are required to write a javascript function that takes in a string that represent. our function should sort this sentence . each word in the sentence string contains an integers
+
+const str = "is2 thi1s t4est 3a";
+
+const sortNumber = (str = "") => {
+  const findNumber = (s = "") =>
+    s.split("").reduce((acc, val) => (+val ? +val : acc), 0);
+  const arr = str.split(" ");
+  const sorter = (a, b) => {
+    return findNumber(a) - findNumber(b);
+  };
+  arr.sort(sorter);
+  return arr.join(" ");
 };
 
-let input = "the lazy brown hello";
-console.log(mySplit(input, " "));
-console.log(input.split(" "));
-
-let string = "hello";
-let temp = 2;
-
-for (let i = 0; i < string.length; i++) {
-  if (string[i] == temp) console.log(string[i]);
-}
-console.log();
-
-function str(a, n) {
-  let str1 = a;
-  str1.char;
-}
-
-str("hello", 2);
-
-let string5 = "hello";
-let s = string5.charAt[2];
-console.log(string5[2]);
+console.log(sortNumber(str));
