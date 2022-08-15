@@ -138,17 +138,36 @@
 
 // we are required to write a javascript function that takes in a string that represent. our function should sort this sentence . each word in the sentence string contains an integers
 
-const str = "is2 thi1s t4est 3a";
+// const str = "is2 thi1s t4est 3a";
 
-const sortNumber = (str = "") => {
-  const findNumber = (s = "") =>
-    s.split("").reduce((acc, val) => (+val ? +val : acc), 0);
-  const arr = str.split(" ");
-  const sorter = (a, b) => {
-    return findNumber(a) - findNumber(b);
-  };
-  arr.sort(sorter);
-  return arr.join(" ");
-};
+// const sortNumber = (str = "") => {
+//   const findNumber = (s = "") =>
+//     s.split("").reduce((acc, val) => (+val ? +val : acc), 0);
+//   const arr = str.split(" ");
+//   const sorter = (a, b) => {
+//     return findNumber(a) - findNumber(b);
+//   };
+//   arr.sort(sorter);
+//   return arr.join(" ");
+// };
 
-console.log(sortNumber(str));
+// console.log(sortNumber(str));
+
+// let str = "priyaSharma";
+// let string = "";
+
+// for (let i = str.length - 1; i >= 0; i--) {
+//   string += str[i];
+// }
+
+// console.log(string);
+
+// let str = "tushar";
+// let str = [1, 2, 3, 4, 5, 6, 7];
+// let string = [];
+
+// for (let i = str.length - 1; i >= 0; i--) {
+//   string += str[i];
+// }
+
+// console.log(string);
